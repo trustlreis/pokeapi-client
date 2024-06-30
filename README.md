@@ -9,50 +9,14 @@ PokeApiClient is a Java client library for interacting with the Pokémon API (Po
 
 ## Installation
 
-To use the PokeApiClient, you need to add the following dependencies to your `pom.xml`:
+To use the PokeApiClient, add the following dependency to your `pom.xml`:
 
 ```xml
-<dependencies>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
-        <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
-        <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${junit.jupiter.version}</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>${junit.jupiter.version}</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>${mockito.version}</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>com.github.tomakehurst</groupId>
-        <artifactId>wiremock-jre8</artifactId>
-        <version>${wiremock.version}</version>
-        <scope>test</scope>
-    </dependency>
-</dependencies>
+<dependency>
+  <groupId>com.truslty.labs</groupId>
+  <artifactId>pokeapi-client</artifactId>
+  <version>1.0.0</version>
+</dependency>
 ```
 
 ## Usage
@@ -119,7 +83,7 @@ This project follows a test pyramid approach. Below is an image representing the
       ```sh
       mvn test -Pfull-tests
       ```
-      
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request on GitHub.
