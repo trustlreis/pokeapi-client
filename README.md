@@ -9,15 +9,31 @@ PokeApiClient is a Java client library for interacting with the Pokémon API (Po
 
 ## Installation
 
-To use the PokeApiClient, add the following dependency to your `pom.xml`:
+To use the PokeApiClient:
 
-```xml
-<dependency>
-  <groupId>com.truslty.labs</groupId>
-  <artifactId>pokeapi-client</artifactId>
-  <version>1.0.0</version>
-</dependency>
-```
+* *First*, add the following dependency to your `pom.xml`
+    ```xml
+    <dependency>
+        <groupId>com.truslty.labs</groupId>
+        <artifactId>pokeapi-client</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+    ```
+
+* *Second*, add the `repository` into `repositories` section
+
+    ```xml
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/trustlreis/pokeapi-client</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    ```
 
 ## Usage
 
