@@ -16,7 +16,7 @@ To use the PokeApiClient:
     <dependency>
         <groupId>com.truslty.labs</groupId>
         <artifactId>pokeapi-client</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </dependency>
     ```
 

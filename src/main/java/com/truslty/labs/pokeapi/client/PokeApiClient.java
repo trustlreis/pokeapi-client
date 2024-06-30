@@ -11,6 +11,8 @@ import java.net.http.HttpResponse;
 public class PokeApiClient {
 
     private static final String DEFAULT_ENDPOINT = "https://pokeapi.co/api/v2";
+    private static final String ENDPOINT_MASK = "%s/pokemon/%s";
+    
     private final String endpoint;
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
@@ -26,7 +28,7 @@ public class PokeApiClient {
     }
 
     public Pokemon getPokemon(String name) throws IOException, InterruptedException {
-        String url = String.format("%s/pokemon/%s", endpoint, name);
+        String url = ENDPOINT_MASK.formatted(endpoint, name);
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
                 .GET()
