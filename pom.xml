@@ -3,7 +3,39 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.truslty.labs</groupId>
     <artifactId>pokeapi-client</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
+    <description>PokeApiClient is a Java client library for interacting with the Pokémon API (PokeAPI).</description>
+    <url>https://github.com/trustlreis/pokeapi-client</url>
+
+    <licenses>
+        <license>
+            <name>The MIT License</name>
+            <url>http://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>trustlreis</id>
+            <name>Luis Machado Reis</name>
+            <email>luis.reis@truatly.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/trustlreis/pokeapi-client.git</connection>
+        <developerConnection>scm:git:ssh://github.com:trustlreis/pokeapi-client.git</developerConnection>
+        <url>https://github.com/trustlreis/pokeapi-client</url>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/trustlreis/pokeapi-client</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -57,7 +89,39 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+
+            <!-- Common plugins used across all profiles -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <goals>clean deploy</goals>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <profiles>
+        <!-- Tests Profiles -->
         <profile>
             <id>unit-tests</id>
             <activation>
@@ -134,5 +198,6 @@
                 </plugins>
             </build>
         </profile>
+
     </profiles>
 </project>
