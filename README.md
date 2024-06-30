@@ -119,29 +119,7 @@ This project follows a test pyramid approach. Below is an image representing the
       ```sh
       mvn test -Pfull-tests
       ```
-
-### Running Specific Test Profiles
-
-- **Run Unit Tests** (activated by default):
-    ```sh
-    mvn test
-    ```
-
-- **Run Component Tests**:
-    ```sh
-    mvn test -Pcomponent-tests
-    ```
-
-- **Run Integration Tests**:
-    ```sh
-    mvn test -Pintegration-tests
-    ```
-
-- **Run All Tests (Full Tests)**:
-    ```sh
-    mvn test -Pfull-tests
-    ```
-
+      
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request on GitHub.
