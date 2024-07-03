@@ -16,7 +16,7 @@ To use the PokeApiClient:
     <dependency>
         <groupId>com.trustly.labs</groupId>
         <artifactId>pokeapi-client</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.6</version>
     </dependency>
     ```
 
@@ -27,13 +27,15 @@ To use the PokeApiClient:
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/trustlreis/pokeapi-client</url>
+            <url>https://trustlreis:REPLACE_BY_TOKEN_PLEASE_REQUEST_TO_RECRUITER@maven.pkg.github.com/trustlreis/pokeapi-client</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
     ```
+
+    Please remember replace the `REPLACE_BY_TOKEN_PLEASE_REQUEST_TO_RECRUITER` placeholder by the *token* provided by the Tech Recruiter 
 
 ## Usage
 
