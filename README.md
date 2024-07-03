@@ -14,9 +14,9 @@ To use the PokeApiClient:
 * *First*, add the following dependency to your `pom.xml`
     ```xml
     <dependency>
-        <groupId>com.truslty.labs</groupId>
+        <groupId>com.trustly.labs</groupId>
         <artifactId>pokeapi-client</artifactId>
-        <version>1.0.4</version>
+        <version>1.0.5</version>
     </dependency>
     ```
 
